@@ -1,9 +1,8 @@
 #
 # Build
 #
-FROM maven:3.8.8-openjdk-11 AS build
+FROM maven:3.8.8-openjdk-11-slim AS build
 
-RUN apt-get update && apt-get -y install maven
 
 WORKDIR /opt/shipping
 
